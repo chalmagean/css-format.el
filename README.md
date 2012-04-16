@@ -12,3 +12,8 @@ line to your init file (usually $HOME/.emacs).
 
 (require 'css-format)
 
+# Usage
+
+From inside a CSS block you can call css-format-inline or
+css-format-block to format that specific block.
+
