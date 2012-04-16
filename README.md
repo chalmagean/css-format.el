@@ -8,12 +8,14 @@ formats of a CSS code block.
 # Installation
 
 To install it, put this file in your load-path and add the following
-line to your init file (usually $HOME/.emacs).
+line to your init file (usually `$HOME/.emacs`).
 
+```lisp
 (require 'css-format)
+```
 
 # Usage
 
-From inside a CSS block you can call css-format-inline or
-css-format-block to format that specific block.
+From inside a CSS block you can call `css-format-inline` or
+`css-format-block` to format that specific block.
 
