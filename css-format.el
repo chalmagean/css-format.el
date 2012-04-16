@@ -52,6 +52,7 @@ and returns it's location."
 
 (defun css-format-inline ()
   "Convert from block to inline style."
+  (interactive)
   (goto-char (css-format-block-start-pos))
   (re-search-forward "[ \n\t]+")
   (replace-match " ")
@@ -60,6 +61,7 @@ and returns it's location."
 
 (defun css-format-block ()
   "Convert from inline to block style."
+  (interactive)
   (goto-char (css-format-block-start-pos))
   (re-search-forward "\\([ ]+\\)[a-z]" (line-end-position))
   (replace-match "\n" nil nil nil 1)
